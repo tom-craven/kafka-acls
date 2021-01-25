@@ -1,6 +1,6 @@
 package com.tom.kafkaacls.acls;
 
-import com.tom.kafkaacls.acls.dto.IAclRequest;
+import com.tom.kafkaacls.acls.dto.AclRequest;
 import org.apache.kafka.clients.admin.CreateAclsResult;
 import org.apache.kafka.clients.admin.DeleteAclsResult;
 import org.apache.kafka.common.acl.AclBinding;
@@ -23,7 +23,7 @@ public class KafkaAclController {
 
     @ResponseBody
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public CreateAclsResult createTopicAclRequest(@RequestBody @Valid IAclRequest createTopicAclRequest) {
+    public CreateAclsResult createTopicAclRequest(@RequestBody @Valid AclRequest createTopicAclRequest) {
         return kafkaAclService.createACL(createTopicAclRequest);
     }
 
@@ -35,7 +35,7 @@ public class KafkaAclController {
 
     @ResponseBody
     @DeleteMapping
-    public DeleteAclsResult deleteAcl(@RequestBody @Valid IAclRequest deleteTopicAclRequest) {
+    public DeleteAclsResult deleteAcl(@RequestBody @Valid AclRequest deleteTopicAclRequest) {
         return kafkaAclService.deleteAcls(deleteTopicAclRequest);
     }
 
