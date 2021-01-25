@@ -23,7 +23,7 @@ public class KafkaAclController {
 
     @ResponseBody
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public CreateAclsResult createTopicAclRequest(@RequestBody @Valid AclRequest createTopicAclRequest) {
+    public CreateAclsResult createAcl(@RequestBody @Valid AclRequest createTopicAclRequest) {
         return kafkaAclService.createACL(createTopicAclRequest);
     }
 
