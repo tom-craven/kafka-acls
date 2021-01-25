@@ -13,7 +13,6 @@ spring:
       options:
         username: admin
         password: admin-secret
-      login-principle: User:${spring.kafka.jaas.options.username}
       config-string: ${spring.kafka.jaas.login-module} ${spring.kafka.jaas.control-flag} username=${spring.kafka.jaas.options.username} password=${spring.kafka.jaas.options.password};
     template:
       default-topic: dev-topic
