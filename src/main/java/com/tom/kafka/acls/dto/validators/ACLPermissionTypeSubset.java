@@ -1,6 +1,6 @@
-package com.tom.kafkaacls.acls.validators;
+package com.tom.kafka.acls.dto.validators;
 
-import org.apache.kafka.common.acl.AclOperation;
+import org.apache.kafka.common.acl.AclPermissionType;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
@@ -14,9 +14,9 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Target({METHOD, FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER, TYPE_USE})
 @Retention(RUNTIME)
 @Documented
-@Constraint(validatedBy = ACLOperationTypeSubSetValidator.class)
-public @interface ACLOperationTypeSubset {
-    AclOperation[] anyOf();
+@Constraint(validatedBy = ACLPermissionTypeSubSetValidator.class)
+public @interface ACLPermissionTypeSubset {
+    AclPermissionType[] anyOf();
 
     String message() default "must be any of {anyOf}";
 

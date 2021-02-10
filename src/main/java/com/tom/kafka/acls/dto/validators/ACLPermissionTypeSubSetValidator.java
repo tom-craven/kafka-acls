@@ -1,4 +1,4 @@
-package com.tom.kafkaacls.acls.validators;
+package com.tom.kafka.acls.dto.validators;
 
 import org.apache.kafka.common.acl.AclPermissionType;
 

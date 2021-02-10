@@ -23,3 +23,5 @@ spring:
       sasl.jaas.config: ${spring.kafka.jaas.config-string}
     admin:
       fail-fast: true
+server:
+  port: 8082

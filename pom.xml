@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.tom</groupId>
-	<artifactId>kafka-acls</artifactId>
+	<artifactId>kafka</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>kafka-acls</name>
 	<description>Kafka ACLS API</description>

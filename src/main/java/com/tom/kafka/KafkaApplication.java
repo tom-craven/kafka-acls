@@ -1,13 +1,13 @@
-package com.tom.kafkaacls;
+package com.tom.kafka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KafkaAclsApplication {
+public class KafkaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(KafkaAclsApplication.class, args);
+		SpringApplication.run(KafkaApplication.class, args);
 	}
 
 }

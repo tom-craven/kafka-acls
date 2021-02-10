@@ -1,6 +1,6 @@
-package com.tom.kafkaacls.acls;
+package com.tom.kafka.acls;
 
-import com.tom.kafkaacls.acls.dto.IAclRequest;
+import com.tom.kafka.acls.dto.IAclRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.admin.AdminClient;
 import org.apache.kafka.clients.admin.CreateAclsResult;

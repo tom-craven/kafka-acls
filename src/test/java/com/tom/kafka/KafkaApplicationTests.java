@@ -1,8 +1,8 @@
-package com.tom.kafkaacls;
+package com.tom.kafka;
 
 
-import com.tom.kafkaacls.acls.KafkaAclService;
-import com.tom.kafkaacls.acls.dto.AclRequest;
+import com.tom.kafka.acls.KafkaAclService;
+import com.tom.kafka.acls.dto.AclRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.admin.CreateAclsResult;
 import org.apache.kafka.common.acl.AclOperation;
@@ -20,7 +20,7 @@ import java.util.concurrent.ExecutionException;
 @SpringBootTest
 @TestMethodOrder(value = MethodOrderer.MethodName.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class KafkaAclsApplicationTests {
+class KafkaApplicationTests {
 
     @Autowired
     KafkaAclService kafkaAclService;

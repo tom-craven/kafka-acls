@@ -1,6 +1,6 @@
-package com.tom.kafkaacls.acls;
+package com.tom.kafka.acls;
 
-import com.tom.kafkaacls.acls.dto.AclRequest;
+import com.tom.kafka.acls.dto.AclRequest;
 import org.apache.kafka.clients.admin.CreateAclsResult;
 import org.apache.kafka.clients.admin.DeleteAclsResult;
 import org.apache.kafka.common.acl.AclBinding;
@@ -12,7 +12,7 @@ import java.util.Collection;
 import java.util.concurrent.ExecutionException;
 
 @RestController
-@RequestMapping(value = "/topic/acl")
+@RequestMapping(value = "/kafka/acl")
 public class KafkaAclController {
 
     private final KafkaAclService kafkaAclService;

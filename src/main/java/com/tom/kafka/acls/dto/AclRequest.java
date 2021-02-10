@@ -1,7 +1,7 @@
-package com.tom.kafkaacls.acls.dto;
+package com.tom.kafka.acls.dto;
 
-import com.tom.kafkaacls.acls.validators.ACLOperationTypeSubset;
-import com.tom.kafkaacls.acls.validators.ACLPermissionTypeSubset;
+import com.tom.kafka.acls.dto.validators.ACLOperationTypeSubset;
+import com.tom.kafka.acls.dto.validators.ACLPermissionTypeSubset;
 import lombok.Builder;
 import lombok.Data;
 import org.apache.kafka.common.acl.AclOperation;
